@@ -1,1 +1,0 @@
-# physics-for-ai.github.io
