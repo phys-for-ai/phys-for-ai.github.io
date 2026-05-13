@@ -1,21 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Demo Page</title>
-</head>
-<body>
-  <header>
-    <h1>Simple Demo Website</h1>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Physics for AI Community</title>
+    <meta
+      name="description"
+      content="Physics for AI is a research community connecting labs, events, seminars, and workshops at the intersection of physics and artificial intelligence."
+    />
+    <meta name="theme-color" content="#f5efe3" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <main>
-    <p>This is a simple HTML demo page.</p>
-  </main>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="#home">Phys for AI</a>
+        <nav aria-label="Primary">
+          <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#labs">Labs</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <footer>
-    <p>&copy; 2026 Demo Website</p>
-  </footer>
-</body>
+    <main class="page-main">
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero__image"
+          src="assets/images/cover.png"
+          alt=""
+          loading="eager"
+          decoding="async"
+        />
+        <div class="hero__shade" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Research Community</p>
+          <h1 id="hero-title">Physics for AI</h1>
+          <p class="hero__lead">
+            A community hub for researchers exploring how physics can inform,
+            explain, and advance artificial intelligence.
+          </p>
+        </div>
+      </section>
+
+      <div class="content-stack">
+        <section id="about" class="home-section" aria-labelledby="about-title">
+          <h2 id="about-title">About</h2>
+          <p>
+            We connect laboratories, reading groups, seminars, workshops, and
+            conferences around physics & AI.
+          </p>
+        </section>
+
+        <section id="labs" class="home-section" aria-labelledby="labs-title">
+          <div class="section-heading">
+            <p class="section-kicker">Community Map</p>
+            <h2 id="labs-title">Labs</h2>
+          </div>
+          <div class="card-grid">
+            <article class="info-card">
+              <p class="card-label">Lab Profile</p>
+              <h3>Lab Name TBD</h3>
+              <p>Short introduction for a participating laboratory.</p>
+            </article>
+            <article class="info-card">
+              <p class="card-label">Lab Profile</p>
+              <h3>Lab Name TBD</h3>
+              <p>Short introduction for a participating laboratory.</p>
+            </article>
+            <article class="info-card">
+              <p class="card-label">Lab Profile</p>
+              <h3>Lab Name TBD</h3>
+              <p>Short introduction for a participating laboratory.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="events" class="home-section" aria-labelledby="events-title">
+          <div class="section-heading">
+            <p class="section-kicker">Meetings and Programs</p>
+            <h2 id="events-title">Events</h2>
+          </div>
+          <div class="event-list">
+            <a class="event-card" href="neurips2026-workshop/">
+              <span>Workshop</span>
+              <strong>NeurIPS 2026 Workshop</strong>
+              <p>Subpage for the NeurIPS 2026 Physics for AI workshop.</p>
+            </a>
+            <a class="event-card" href="#events">
+              <span>Seminar</span>
+              <strong>Seminar Series TBD</strong>
+              <p>Regular talks and discussions from the community.</p>
+            </a>
+            <a class="event-card" href="#events">
+              <span>Meeting</span>
+              <strong>Community Meeting TBD</strong>
+              <p>Updates, collaborations, and project introductions.</p>
+            </a>
+          </div>
+        </section>
+
+        <section id="resources" class="home-section" aria-labelledby="resources-title">
+          <div class="section-heading">
+            <p class="section-kicker">Shared Materials</p>
+            <h2 id="resources-title">Resources</h2>
+          </div>
+          <p>Reading lists, recordings, notes, and community announcements will be collected here.</p>
+        </section>
+
+        <section id="contact" class="home-section" aria-labelledby="contact-title">
+          <div class="section-heading">
+            <p class="section-kicker">Get in Touch</p>
+            <h2 id="contact-title">Contact</h2>
+          </div>
+          <p>Contact information and mailing list details will be added soon.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>© <span id="year"></span> Physics for AI Community</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
