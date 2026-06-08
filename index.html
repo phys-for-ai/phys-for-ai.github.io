@@ -6,7 +6,7 @@
     <title>Physics for AI Community</title>
     <meta
       name="description"
-      content="Physics for AI is a research community connecting labs, events, seminars, and workshops at the intersection of physics and artificial intelligence."
+      content="Physics for AI is an open research community for exploring the frontiers of artificial intelligence through the lens of physics, statistical mechanics, dynamical systems, geometry, and applied mathematics."
     />
     <meta name="theme-color" content="#f5efe3" />
     <link rel="stylesheet" href="style.css" />
@@ -14,99 +14,105 @@
 
   <body>
     <header class="site-header">
-      <div class="site-header__inner">
-        <a class="site-brand" href="#home">Phys for AI</a>
+      <div class="header-inner">
+        <a class="site-brand" href="#">Phys for AI</a>
         <nav aria-label="Primary">
           <ul class="nav">
-            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#news">News</a></li>
             <li><a href="#labs">Labs</a></li>
             <li><a href="#events">Events</a></li>
-            <li><a href="#resources">Resources</a></li>
+            <!-- <li><a href="#resources">Resources</a></li> -->
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="page-main">
+    <main class="page">
       <section id="home" class="hero" aria-labelledby="hero-title">
         <img
-          class="hero__image"
+          class="hero-img"
           src="assets/images/cover.png"
           alt=""
           loading="eager"
           decoding="async"
         />
-        <div class="hero__shade" aria-hidden="true"></div>
-        <div class="hero__content">
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-body">
           <p class="eyebrow">Research Community</p>
           <h1 id="hero-title">Physics for AI</h1>
-          <p class="hero__lead">
-            A community hub for researchers exploring how physics can inform,
-            explain, and advance artificial intelligence.
+          <p class="hero-lead">
+            An open community hub for researchers exploring how physical principles can help us understand and design modern artificial intelligence systems.
           </p>
         </div>
       </section>
 
-      <div class="content-stack">
-        <section id="about" class="home-section" aria-labelledby="about-title">
+        <div class="sections">
+        <section id="about" class="section" aria-labelledby="about-title">
           <h2 id="about-title">About</h2>
           <p>
-            We connect laboratories, reading groups, seminars, workshops, and
-            conferences around physics & AI.
+            <strong>Research focus.</strong>
+            Physics for AI explores modern artificial intelligence through ideas and tools from physics, statistical mechanics, dynamical systems, geometry, and applied mathematics. We focus on generative modeling, learning objectives, representations and latent spaces, optimization, training dynamics, and emergent behavior.
+          </p>
+
+          <p>
+            <strong>Why physics?</strong>
+            Modern AI systems have achieved striking empirical success, yet many of their core mechanisms remain only partially understood. Their objectives, representations, training trajectories, and emergent behaviors raise questions that cannot be answered by scaling experiments alone. Physics offers a complementary language based on energy landscapes, free energy, nonequilibrium dynamics, phase transitions, symmetry, coarse-graining, collective behavior, and structured state spaces.
+          </p>
+
+          <p><strong>Core themes include:</strong></p>
+          <ul>
+            <li>Understanding learning objectives through large-deviation principles, variational principles, free energy, entropy, and energy-based formulations.</li>
+            <li>Studying generative models as dynamical systems that transform distributions over time.</li>
+            <li>Investigating the structures and dynamics that emerge in latent and representation spaces.</li>
+            <li>Understanding how optimization paths, training trajectories, implicit bias, and phase-transition phenomena shape model behavior.</li>
+            <li>Using symmetry, invariance, coarse-graining, collective modes, and nonequilibrium dynamics as interpretive and operational tools for AI design.</li>
+            <li>Using minimal models, mean-field theory, dynamical systems theory, and statistical physics to explain qualitative changes in learning and generalization.</li>
+          </ul>
+
+          <br />
+
+          <p>
+            <strong>Community philosophy.</strong>
+            Our goal is to build a relaxed, open, and interactive research community around this emerging direction. We emphasize deep discussion around shared scientific questions, rather than institutional affiliation, seniority, discipline, or academic status.
+          </p>
+          <p>
+            We encourage participants to think aloud, share viewpoints, raise questions, work across disciplines, and explore new directions together. We especially value problems that are still conceptually unclear, technically difficult, or not yet organized into a standard research agenda.
+          </p>
+
+          <p>
+            <strong>Community goals.</strong>
+            Physics for AI connects researchers through workshops, seminars, reading groups, informal discussions, and collaborative research initiatives. We aim to support local and international interactions across universities, research institutions, and industry labs, gradually building a long-term, open, and discussion-driven Physics for AI research community.
+          </p>
+          <p>
+            We welcome researchers interested in understanding artificial intelligence as a high-dimensional statistical and dynamical system. Whether your background is in AI, physics, mathematics, statistics, neuroscience, or related areas, we invite you to join the discussion and help shape this emerging research direction.
           </p>
         </section>
 
-        <section id="labs" class="home-section" aria-labelledby="labs-title">
+        <section id="news" class="section" aria-labelledby="news-title">
+          <h2 id="news-title">News</h2>
+        </section>
+
+        <section id="labs" class="section" aria-labelledby="labs-title">
           <h2 id="labs-title">Labs</h2>
-          <div class="card-grid">
-            <article class="info-card">
-              <h3>Lab Name TBD</h3>
-              <p>Short introduction for a participating laboratory.</p>
-            </article>
-            <article class="info-card">
-              <h3>Lab Name TBD</h3>
-              <p>Short introduction for a participating laboratory.</p>
-            </article>
-            <article class="info-card">
-              <h3>Lab Name TBD</h3>
-              <p>Short introduction for a participating laboratory.</p>
-            </article>
-          </div>
         </section>
 
-        <section id="events" class="home-section" aria-labelledby="events-title">
+        <section id="events" class="section" aria-labelledby="events-title">
           <h2 id="events-title">Events</h2>
-          <div class="event-list">
-            <a class="event-card" href="neurips2026-workshop/">
-              <span>Workshop</span>
-              <strong>NeurIPS 2026 Workshop</strong>
-              <p>Subpage for the NeurIPS 2026 Physics for AI workshop.</p>
-            </a>
-            <a class="event-card" href="#events">
-              <span>Seminar</span>
-              <strong>Seminar Series TBD</strong>
-              <p>Regular talks and discussions from the community.</p>
-            </a>
-            <a class="event-card" href="#events">
-              <span>Meeting</span>
-              <strong>Community Meeting TBD</strong>
-              <p>Updates, collaborations, and project introductions.</p>
-            </a>
-          </div>
         </section>
 
-        <section id="resources" class="home-section" aria-labelledby="resources-title">
+        <!-- <section id="resources" class="section" aria-labelledby="resources-title">
           <h2 id="resources-title">Resources</h2>
-          <p>Reading lists, recordings, notes, and community announcements will be collected here.</p>
-        </section>
+        </section> -->
 
-        <section id="contact" class="home-section" aria-labelledby="contact-title">
+        <section id="contact" class="section" aria-labelledby="contact-title">
           <h2 id="contact-title">Contact</h2>
           <p>
-            Please reach out to us if you have any questions about the community.
+            Please reach out to us if you have any questions or ideas for the community!
+          </p>
           <p>
+            Email:
             <a href="mailto:phys4ai2026@gmail.com">phys4ai2026@gmail.com</a>
           </p>
         </section>
@@ -114,7 +120,7 @@
     </main>
 
     <footer class="site-footer">
-      <div class="site-footer__inner">
+      <div class="site-footer-inner">
         <p>© <span id="year"></span> Physics for AI Community</p>
       </div>
     </footer>
